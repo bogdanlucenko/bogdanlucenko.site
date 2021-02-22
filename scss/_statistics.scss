@@ -1,0 +1,42 @@
+.statistics {
+  background: #f2f2f2;
+  &__block {
+    padding: 100px 0px 100px 90px;
+  }
+  &__item {
+    &-icon {
+      font-size: 42px;
+      color: #c86dd7;
+    }
+    &-num {
+      font-family: "Poppins";
+      font-size: 40px;
+      font-weight: 700;
+    }
+    &-desk {
+      padding-right: 50px;
+      font-family: Source Sans Pro;
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .statistics__block {
+    padding: 50px 0px 0px 90px;
+  }
+  .statistics__item {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .statistics__block {
+    padding: 50px 0px 0px 20px;
+  }
+} ;
