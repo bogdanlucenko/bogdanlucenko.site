@@ -48,6 +48,13 @@
         color: #e7d8f1;
         background-color: #9b65be;
       }
+      &:focus {
+        text-shadow: 4px 4px 4px #300e46;
+        box-shadow: inset 0 0 20px 0 #300e46;
+        border-color: #944fc2;
+        color: #e7d8f1;
+        background-color: #9b65be;
+      }
     }
   }
 }
@@ -191,6 +198,13 @@ label {
     transition: background-color 0.5s, color 0.5s, border-color 0.5s,
       text-shadow 0.5s;
     &:hover {
+      text-shadow: 4px 4px 4px #300e46;
+      box-shadow: inset 0 0 20px 0 #300e46;
+      border-color: transparent;
+      color: #e7d8f1;
+      background-color: #9b65be;
+    }
+    &:focus {
       text-shadow: 4px 4px 4px #300e46;
       box-shadow: inset 0 0 20px 0 #300e46;
       border-color: transparent;
