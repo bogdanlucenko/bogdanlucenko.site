@@ -1,0 +1,119 @@
+.explore {
+  overflow: hidden;
+  position: relative;
+  background: #3023ae;
+  &__content {
+    padding: 93px 0 85px;
+  }
+  &__suptitle {
+    margin-bottom: 18px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+  }
+  &__title {
+    font-family: "Poppins";
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    line-height: 64px;
+  }
+  &__btn {
+    width: 170px;
+    height: 48px;
+    font-family: "SourceSansPro";
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 58px;
+    color: white;
+    background: #ffc300;
+    border-radius: 24px;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s,
+      text-shadow 0.5s;
+    position: absolute;
+    top: 60px;
+    left: 39px;
+    z-index: 2;
+
+    &-block {
+      display: block;
+      position: relative;
+    }
+    &:hover {
+      text-shadow: 4px 4px 4px #300e46;
+      box-shadow: inset 0 0 20px 0 #300e46;
+      border-color: #944fc2;
+      color: #e7d8f1;
+      background-color: #9b65be;
+    }
+    &:focus {
+      text-shadow: 4px 4px 4px #300e46;
+      box-shadow: inset 0 0 20px 0 #300e46;
+      border-color: #944fc2;
+      color: #e7d8f1;
+      background-color: #9b65be;
+    }
+  }
+}
+
+.oval {
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+  &-1 {
+    width: 140px;
+    height: 140px;
+    bottom: -74px;
+    left: -55px;
+  }
+  &-3 {
+    width: 323px;
+    height: 323px;
+    right: 20%;
+    bottom: -125px;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .oval-3 {
+    right: 10%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .explore__content {
+    padding-bottom: 50px;
+  }
+  .explore__title {
+    padding: 0px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 34px;
+  }
+  .explore__btn {
+    position: static;
+  }
+  .oval {
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+    &-1 {
+      width: 140px;
+      height: 140px;
+      bottom: -82px;
+      left: -62px;
+    }
+    &-3 {
+      width: 320px;
+      height: 320px;
+      right: -240px;
+      bottom: -120px;
+      z-index: 1;
+    }
+  }
+  .row {
+    --bs-gutter-x: 0;
+  }
+}
